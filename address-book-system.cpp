@@ -44,13 +44,13 @@ public:
     }
 
     void displayContacts() {
-        for (size_t i = 0; i < contacts.size(); ++i) {
+        for (int i = 0; i < contacts.size(); i++) {
             contacts[i].getInfo(); 
         }
     }
 
     void editContact(string first_name, string last_name) {
-        for (size_t i = 0; i < contacts.size(); ++i) {
+        for (int i = 0; i < contacts.size(); i++) {
             if (contacts[i].first_name == first_name && contacts[i].last_name == last_name) {
                 string newAddress, newCity, newEmail;
                 int newZip;
