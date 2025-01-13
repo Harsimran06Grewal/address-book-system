@@ -43,7 +43,7 @@ public:
     }
 
     void displayContacts() {
-        for (size_t i = 0; i < contacts.size(); ++i) {
+        for (int i = 0; i < contacts.size(); i++) {
                 contacts[i].getInfo(); 
         }
     }
